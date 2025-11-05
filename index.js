@@ -1,11 +1,11 @@
 import dotenv from 'dotenv';
-dotenv.config({ path: '.env' });  // Barra normal!
+dotenv.config({ path: '.env' });  
 
 import mysql from 'mysql2/promise';
 import express from 'express';
 
 const app = express();
-const port = process.env.PORT;   // Agora está certo!
+const port = process.env.PORT; 
 
 app.use(express.json());
 
